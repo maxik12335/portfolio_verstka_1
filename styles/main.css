@@ -4,7 +4,150 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+.header {
+  background-image: url(../images/header-fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 22px 0 305px;
+  position: relative;
+}
+
+.header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+.logo {
+  width: 139px;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.menu__link {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding: 2.3px 0;
+  transition: 0.2s;
+}
+
+.menu__link:hover {
+  border-color: white;
+}
+
+.lang__button {
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.lang__button:first-child {
+  margin-right: 8px;
+}
+
+.header__title {
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 700;
+  color: white;
+  width: 900px;
+  margin-bottom: 53px;
+}
+
+.button {
+  width: 198px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #DB2512;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.header__carts {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__cart {
+  width: 100%;
+  padding: 39px 37px 37px 39px;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+}
+
+.header__cart:not(:last-child) {
+  margin-right: 21px;
+}
+
+.header__cart-img-box {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 21px;
+}
+
+.header__cart-img-box img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header__cart-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.header__cart-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #B7B7B7;
 }
