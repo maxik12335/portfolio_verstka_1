@@ -103,12 +103,20 @@ body {
   border-color: white;
 }
 
+.lang {
+  display: flex;
+}
+
 .lang__button {
   background-color: transparent;
-  color: white;
+  color: #B7B7B7;
   font-size: 15px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.lang__button.active {
+  color: white;
 }
 
 .lang__button:first-child {
