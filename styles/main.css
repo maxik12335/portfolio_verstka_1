@@ -42,6 +42,15 @@ a {
   text-decoration: none;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
 button {
   border: none;
   outline: none;
@@ -409,4 +418,75 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: #B7B7B7;
+}
+
+.contacts {
+  background-color:#171616;
+  padding: 84px 0 97px 0;
+}
+
+.contacts-title {
+  color: white;
+  margin-bottom: 46px;
+}
+
+.form {
+  margin-bottom: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 440px;
+}
+
+.input {
+  width: 197px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  padding-bottom: 9px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input::placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input:nth-child(1),
+.input:nth-child(2) {
+  margin-bottom: 45px;
+}
+
+.input:nth-child(3),
+.input:nth-child(4) {
+  margin-bottom: 54px;
+}
+
+.textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  resize: none;
+  border-bottom: 1px solid white;
+  padding-bottom: 100px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 37px;
+}
+
+.textarea::placeholder {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1.15px;
+  font-family: 'Poppins', sans-serif;
 }
